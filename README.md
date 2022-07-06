@@ -41,7 +41,9 @@ This document describes the setup requirements for running the Optical Encoder B
 1. <p style='text-align: justify;'> Connect the 3-phase wires from the motor to PHC, PHB, and PHA of the J14 connector and encoder wires from the motor to +5V, GND, QEA and QEB terminals of connector J8 (in the same order as shown in the picture), provided on the dsPIC33CK LVMC Board.</p>
 
     <p align="left" >
-    <img  src="images/har1.png"></p>
+    <img  src="images/har1.png" alt="har1" style="width:200px;>
+    <p align="left" >
+    <img  src="images/har1_1.png" alt="har1_1" style="width:185px;></p>
 
     > **_NOTE:_**
     >The phase and encoder connector sequency can be found in the Hardware Init block of the model, as shown below.
@@ -67,7 +69,7 @@ This document describes the setup requirements for running the Optical Encoder B
 <p style='text-align: justify;'> Follow the below instructions step-by-step, to set up and run the motor control demo application:</p>
 
 1. Launch MATLAB (refer the section [“2.2 Sofware Tools Used for Testing the MATLAB/Simulink Model"](#22-software-tools-used-for-testing-the-matlabsimulink-model)).</p> 
-2. Open the folder dowmloaded from the repository, in which MATLAB files are saved (refer the section ["2.1 MATLAB Model Required for the Demonstration"](#21-matlab-model-required-for-the-demonstration)).
+2. Open the folder downloaded from the repository, in which MATLAB files are saved (refer the section ["2.1 MATLAB Model Required for the Demonstration"](#21-matlab-model-required-for-the-demonstration)).
 
     <p align="left" >
     <img  src="images/dem2.png"></p>

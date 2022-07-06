@@ -41,14 +41,16 @@ This document describes the setup requirements for running the Optical Encoder B
 1. <p style='text-align: justify;'> Connect the 3-phase wires from the motor to PHC, PHB, and PHA of the J14 connector and encoder wires from the motor to +5V, GND, QEA and QEB terminals of connector J8 (in the same order as shown in the picture), provided on the dsPIC33CK LVMC Board.</p>
 
     <p align="left" >
-    <img  src="images/har1.png" alt="har1" style="width:200px;>
+    <img  src="images/har1.png" alt="har1" style="width:200px;"></p>
     <p align="left" >
-    <img  src="images/har1_1.png" alt="har1_1" style="width:185px;></p>
+    <img  src="images/har1_1.png" alt="har1_1" style="width:185px;"></p>
+
 
     > **_NOTE:_**
     >The phase and encoder connector sequency can be found in the Hardware Init block of the model, as shown below.
     ><p align="left" >
     ><img  src="images/har2.png"></p>
+
 
 2. <p style='text-align: justify;'> Plug in the 24V power supply to connector J1 provided on the dsPIC33CK LVMC Board. Alternatively, the Inverter Board can also be powered through Connector J2.</p>
 

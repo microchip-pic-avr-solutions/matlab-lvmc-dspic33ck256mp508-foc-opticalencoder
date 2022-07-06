@@ -45,6 +45,7 @@ This document describes the setup requirements for running the Optical Encoder B
     <p align="left" >
     <img  src="images/har1_1.png" alt="har1_1" style="width:185px;></p>
 
+
     > **_NOTE:_**
     >The phase and encoder connector sequency can be found in the Hardware Init block of the model, as shown below.
     ><p align="left" >

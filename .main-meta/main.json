@@ -1,17 +1,25 @@
 {
    "metaDataVersion":"1.0.0",
-   "category":"com.microchip.ide.project",
+   "category":"com.microchip.matlab.project",
    "content":{
-      "metaDataVersion":"1.3.0",
-      "name":"com.microchip.mplabx.project.matlab-lvmc-dspic33ck256mp508-foc-opticalencoder",
+      "metaDataVersion":"1.0.0",
+      "name":"com.microchip.matlab.project.matlab-lvmc-dspic33ck256mp508-foc-opticalencoder",
       "version":"1.0.0",
-      "displayName":"MATLAB-Simulink model for Optical Encoder Based FOC",
+      "displayName":"MATLAB-Simulink model for Optical Encoder Based FOC using LVMC",
       "projectName":"matlab-lvmc-dspic33ck256mp508-foc-opticalencoder",
-      "shortDescription":"Encoder Based FOC for PMSM using MATLAB",
-      "ide":{
-         "name":"MPLABX",
-         "semverRange":">=5.40.0"
+      "shortDescription":"MATLAB-Simulink model for Optical Encoder Based FOC using LVMC",
+      "simulationTool":{
+         "name":"MATLAB/Simulink",
+         "semverRange":">=2022"
       },
+      "addonPackages":[
+                "MATLAB add on packages",
+                "Simulink",
+                "MPLAB Device blocks for Simulink",
+                "Motor Control Blockset",
+                "Embedded Coder",
+                "Fixed-Point Designer"
+      ],
       "compiler":{
          "name":"XC16",
          "semverRange":"^2.0.0"
@@ -26,18 +34,16 @@
          "content":{
             "metaDataVersion":"1.0.0",
             "category":"com.microchip.device",
-            "name":"dspic33ck256mp508",
+            "name":"dsPIC33CK256MP508",
             "versionRange":"*"
          }
       },
-	  "peripherals":[
-         "ADC",
-         "PWM",
-         "UART"
-      ],
       "keywords":[
          "Motor Control",
-		 "FOC"
+         "FOC",
+         "ADC",
+         "PWM"
       ]
    }
 }
+

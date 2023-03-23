@@ -13,15 +13,14 @@ This document describes the setup requirements for running the Optical Encoder B
 ### 2.2	Software Tools Used for Testing the MATLAB/Simulink Model
 1.	MPLAB X IDE and IPE (v6.0)
 2.	XC16 compiler (v2.00)
-3.	MATLAB R2022a
+3.	MATLAB R2022b
 4.	Required MATLAB add-on packages
     -	Simulink
     -	Simulink Coder
-    -	Stateflow
     -	MATLAB Coder
-    -	Embedded Coder (v7.8)
-    -	MPLAB Device blocks for Simulink (v3.50.24)
-    - Motor Control Blockset (v1.4)
+    -	Embedded Coder (v7.9)
+    -	MPLAB Device blocks for Simulink (v3.50.35)
+    - Motor Control Blockset (v1.5)
 
 > **_NOTE:_**
 >The software used for testing the model during release is listed above. It is recommended to use the version listed above or later versions for building the model.
@@ -38,26 +37,19 @@ This document describes the setup requirements for running the Optical Encoder B
 ## 3. HARDWARE SETUP
 <p style='text-align: justify;'>This section describes hardware setup required for the demonstration.</p>
 
-1. <p style='text-align: justify;'> Connect the 3-phase wires from the motor to PHC, PHB, and PHA of the J14 connector and encoder wires from the motor to +5V, GND, QEA and QEB terminals of connector J8 (in the same order as shown in the picture), provided on the dsPIC33CK LVMC Board.</p>
+1. <p style='text-align: justify;'> Connect the 3-phase wires from the motor to PHA, PHB, and PHC of the J14 connector and encoder wires from the motor to +5V, GND, QEA and QEB terminals of connector J8 (in the same order as shown in the picture), provided on the dsPIC33CK LVMC Board.</p>
 
     <p align="left" >
     <img  src="images/har1.png" alt="har1" style="width:200px;"></p>
     <p align="left" >
     <img  src="images/har1_1.png" alt="har1_1" style="width:185px;"></p>
 
-
-    > **_NOTE:_**
-    >The phase and encoder connector sequency can be found in the Hardware Init block of the model, as shown below.
-    ><p align="left" >
-    ><img  src="images/har2.png"></p>
-
-
 2. <p style='text-align: justify;'> Plug in the 24V power supply to connector J1 provided on the dsPIC33CK LVMC Board. Alternatively, the Inverter Board can also be powered through Connector J2.</p>
 
     <p align="left" >
     <img  src="images/har3.png"></p>
 
-3. <p style='text-align: justify;'> The board has an onboard programmer ‘PICkit™ On Board (PKoBv4)”, which can be used for programming or debugging the dsPIC33CK256MP508. To use an on-board programmer, connect a micro-USB cable between Host PC and Micro USB connector J13 provided on the dsPIC33CK LVMC Board.</p>
+3. <p style='text-align: justify;'> The board has an onboard programmer 'PICkit™ On Board (PKoBv4)', which can be used for programming or debugging the dsPIC33CK256MP508. To use an on-board programmer, connect a micro-USB cable between Host PC and Micro USB connector J13 provided on the dsPIC33CK LVMC Board.</p>
 
     <p align="left" >
     <img  src="images/har4.png"></p>
@@ -148,7 +140,7 @@ This document describes the setup requirements for running the Optical Encoder B
 
 2. Ensure that the FOC model is programmed and running as described under section ["4. Basic Demonstration"](#4-basic-demonstration) by following steps 1 through 13.
 
-3. <p style='text-align: justify;'>Open the MCB Host model and double click on the <b>“Serial Setup”</b> block. Then select the appropriate COM port connected to the hardware from the drop-down menu and set the baud rate as 921659. Please note that the same baud rate is required to be chosen in the Sensorless FOC model (the baud rate can be viewed on the <b>“UART Configuration”</b> block in the <b>“Hardware Init”</b> subsystem).
+3. <p style='text-align: justify;'>Open the MCB Host model and double click on the <b>“Serial Setup”</b> block. Then select the appropriate COM port connected to the hardware from the drop-down menu and set the baud rate as 921659. Please note that the same baud rate is required to be chosen in the FOC model (the baud rate can be viewed on the <b>“UART Configuration”</b> block in the <b>“LVMC Board Template”</b>).
 
     <p align="left">
       <img  src="images/host3.png"></p>

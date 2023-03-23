@@ -77,7 +77,7 @@ This document describes the setup requirements for running the Optical Encoder B
 4.	<p style='text-align: justify;'>Double click on the FOC Simulink model.
 
     <p align="left">
-      <img  src="images/dem2.png"></p>
+      <img  src="images/simfilepic.png"></p>
     </p>
 
 5.	<p style='text-align: justify;'>This opens the FOC Simulink model as shown below. Click on the <b>"Run"</b> icon to start the simulation.
